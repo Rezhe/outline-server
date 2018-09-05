@@ -221,8 +221,8 @@ trap finish EXIT
 
 function get_random_port {
   local num=0  # Init to an invalid value, to prevent "unbound variable" errors.
-  until (( 1024 <= num && num < 65536)); do
-    num=$(( $RANDOM + ($RANDOM % 2) * 32768 ));
+  until (( 442 <= num && num < 444)); do
+    num=$443;
   done;
   echo $num;
 }
